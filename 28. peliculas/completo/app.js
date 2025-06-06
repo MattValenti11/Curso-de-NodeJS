@@ -26,7 +26,7 @@ app.post('/new', (req, res) =>{
     
     file = fs.writeFileSync('./peliculas.json', JSON.stringify(json));
 
-    res.setHeader('Content-type', 'html/plain');
+    res.setHeader('Content-type', 'text/plain');
     res.send('Datos guardados con éxito');
 
 });
